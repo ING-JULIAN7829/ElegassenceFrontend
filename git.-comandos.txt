@@ -17,3 +17,69 @@ git commit -m "feat: initial frontend structure" -> agregamos un commit de nuest
 git push origin develop
 
 
+##GIT FLOW COMANDOS
+##FEEATURE################## -Funcionalidades
+git checkout develop                              # Ir a la rama base de desarrollo
+git pull origin develop                           # Actualizar develop con los últimos cambios
+git checkout -b feature/nueva-funcionalidad       # Crear una rama para una nueva funcionalidad
+git status                                        # Revisar qué archivos fueron modificados
+git add .                                         # Preparar todos los cambios
+git commit -m "feat: agregar nueva funcionalidad" # Guardar progreso con commit semántico
+git push origin feature/nueva-funcionalidad       # Subir la rama como respaldo o colaboración
+
+git checkout develop                              # Volver a develop cuando la funcionalidad esté lista
+git merge feature/nueva-funcionalidad             # Integrar la funcionalidad en develop
+git push origin develop                           # Subir develop actualizado
+git branch -d feature/nueva-funcionalidad         # Eliminar rama local terminada
+--------------------------------------------------------------------------------------------
+############FIX -- Correcion de errores
+git checkout develop                              # Asegurar que estás en develop
+git pull origin develop                           # Actualizar rama base
+git checkout -b fix/error-modulo                  # Crear rama para corregir un error
+git add .                                         # Preparar cambios
+git commit -m "fix: corregir error en modulo"     # Guardar corrección
+git push origin fix/error-modulo                  # Subir rama de corrección
+
+git checkout develop                              # Regresar a develop
+git merge fix/error-modulo                        # Integrar corrección
+git push origin develop                           # Subir cambios integrados
+git branch -d fix/error-modulo                    # Eliminar rama local de corrección
+-------------------------------------------------------------------------------------------------
+###########################REALEASE --- preparacion de una version
+git checkout develop                              # Ir a develop cuando esté lista una versión
+git pull origin develop                           # Actualizar rama base
+git checkout -b release/v1.0.0                    # Crear rama de release para preparar lanzamiento
+git add .                                         # Preparar ajustes finales
+git commit -m "chore: preparar release v1.0.0"    # Guardar cambios de preparación
+git push origin release/v1.0.0                    # Subir release al remoto
+
+git checkout main                                 # Cambiar a la rama estable
+git pull origin main                              # Actualizar main antes de fusionar
+git merge release/v1.0.0                          # Integrar la versión estable
+git push origin main                              # Subir main actualizado
+
+git tag v1.0.0                                    # Etiquetar la versión publicada
+git push origin v1.0.0                            # Subir etiqueta al remoto
+
+git checkout develop                              # Regresar a desarrollo
+git merge main                                    # Sincronizar develop con la versión publicada
+git push origin develop                           # Subir develop actualizado
+git branch -d release/v1.0.0                      # Eliminar rama local release
+------------------------------------------------------------------------------------------------------
+#########################HOTFIX -----Fallo grave en produccion
+git checkout main                                 # Ir a la rama estable
+git pull origin main                              # Actualizar main
+git checkout -b hotfix/error-critico              # Crear rama urgente desde main
+git add .                                         # Preparar corrección
+git commit -m "hotfix: corregir error crítico"    # Guardar solución urgente
+git push origin hotfix/error-critico              # Subir rama hotfix
+
+git checkout main                                 # Volver a main
+git merge hotfix/error-critico                    # Integrar corrección urgente
+git push origin main                              # Publicar corrección
+
+git checkout develop                              # Llevar el hotfix también a desarrollo
+git merge hotfix/error-critico                    # Sincronizar develop
+git push origin develop                           # Subir develop actualizado
+git branch -d hotfix/error-critico                # Eliminar rama local hotfix
+-----------------------------------------------------------------------------------------------
