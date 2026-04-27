@@ -1,0 +1,19 @@
+#Inicializamos proyecto
+git init
+#revisamos status
+git status
+--------------------------------GITHUB
+#agregar remoto de github
+git remote add origin url  | verficamos git remote -v
+#Traemos informacion de git hub
+git fetch origin -> ramas y demas archivos sin modificar los nuestros
+#Sincronizamos nuestra rama develop de github con la local
+git checkout -b develop origin/develop
+#Agregamos cambios a la rama
+git add . -> agregamos todos los archivos
+git add .
+git commit -m "feat: initial frontend structure" -> agregamos un commit de nuestros cambios
+#Subimos cambios a github
+git push origin develop
+
+
