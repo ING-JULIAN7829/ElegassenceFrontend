@@ -46,6 +46,9 @@ Este es un proyecto que se centra en un freelance del ecommerce elegassence enfo
 -Se aprendio a presupuestar proyectos de software
 -En esta primera version se esta aprendiendo a usar git y github, tratando de aplicar gitflow
 <h2>Aplicacion de gitflow</h2>
+<h3>Diagrma de gitflow</h3>
+<img width="1400" height="788" alt="image" src="https://github.com/user-attachments/assets/974f7700-0bf6-4fbb-9ad8-f29722d77274" />
+
 <h3>Ramas</h3>
 <img width="417" height="169" alt="image" src="https://github.com/user-attachments/assets/4a44ba19-30db-419b-8e9c-e08fe3bdcbf7" />
 <h3>Estructura de ramas</h3>
