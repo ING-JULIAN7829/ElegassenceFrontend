@@ -1,0 +1,404 @@
+  <!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Tienda de lujo Elegassence - Encuentra moda y accesorios exclusivos.">
+      <meta name="keywords" content="lujo, moda, accesorios, Elegassence, tienda online">
+      <meta name="author" content="Elegassence">
+      <meta name="robots" content="index, follow">
+      <meta property="og:title" content="Elegassence - Tienda de Lujo">
+      <meta property="og:description" content="Explora nuestra colección de lujo y estilo.">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&family=Urbanist:wght@400;600&family=DM+Sans:wght@400;700&display=swap" media="print" onload="this.media='all'">
+      <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&family=Urbanist:wght@400;600&family=DM+Sans:wght@400;700&display=swap">
+      </noscript>
+      <link rel="icon" href="./Img/Logo.jpg" type="image/x-icon">
+      <link rel="stylesheet" href="./CSS/Normalize.css">
+      <link rel="stylesheet" href="./CSS/Index.css">    
+      
+      <title>Elegassence - Tienda de Lujo</title>
+    </head>
+  <body>
+
+  <header class="Header"> 
+    <div class="Header__branding">
+      <a href="/" class="Header__logo">Elegassence</a>
+    </div>
+
+    <nav class="Header__nav">
+      <ul class="Header__menu">
+        <li class="Header__menu-item">
+          <a href="./Index.html" class="Header__menu-link">Inicio</a>
+        </li>
+        <li class="Header__menu-item">
+          <a href="./Catalogo.html" class="Header__menu-link">Catálogo</a>
+        </li>
+        <li class="Header__menu-item">
+          <a href="./Blog.html" class="Header__menu-link">Blog</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="Header__shipping">
+      <picture>
+        <source srcset="/Img/Bandera.avif" type="image/avif">
+        <source srcset="/Img/Bandera.webp" type="image/webp">
+        <img src="/Img/Bandera.png" alt="Bandera nacional" width="100" height="100">
+      </picture>
+      Envíos nacionales
+    </div>
+
+    <div class="Header__icons">
+      <img src="./Img/Carrito.png" alt="Carrito de compras" width="100" height="100"> 
+  </div>
+  </header>
+
+
+    
+  <section class="Hero">
+    
+    <div class="Hero__cards">
+        <div class="Hero__card">
+          <video class="Hero__video" poster="./Img/Duracion.avif" autoplay muted loop preload="none">
+            <source src="./Videos/Intro.webm" type="video/webm">
+            <source src="./Videos/Intro.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+          </video>
+          
+        </div>
+
+        <div class="Hero__card">
+          <picture>
+            <source srcset="./Img/Hero1.avif" type="image/avif">
+            <source srcset="./Img/Hero1.webp" type="image/webp">
+            <img src="./Img/Hero1.png"  loading="lazy" alt="Perfumes más vendidos en Elegassence" class="Hero__image" width="100" height="100">
+          </picture>    
+          <div class="Hero__card-content">
+            <h2 class="Hero__card-title">Más Vendidos</h2>
+            <p class="Hero__card-text">Explora nuestras fragancias favoritas.</p>
+          </div>
+        </div>
+
+        <div class="Hero__card">
+          <picture>
+            <source srcset="./Img/Hero2.avif" type="image/avif">
+            <source srcset="./Img/Hero2.webp" type="image/webp">
+            <img src="./Img/Hero2.png" loading="lazy" alt="Nuevas fragancias exclusivas de Elegassence" class="Hero__image" width="100" height="100">
+          </picture>  
+          <div class="Hero__card-content">
+            <h2 class="Hero__card-title">Destacados</h2>
+            <p class="Hero__card-text">Descubre las últimas tendencias.</p>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <main class="main-carousel">
+    <div class="carousel-track">
+      <div class="carousel-slide">
+        <h2 class="main__products-title">Recomendados para hombre</h2>
+        <section class="main__products-row">
+          <div class="product-card">
+            <picture>
+              <source srcset="./Img/Eros_de_versacce.avif" type="image/avif">
+              <source srcset="./Img/Eros_de_versacce.webp" type="image/webp">
+              <img src="./Img/Eros_de_versacce.png" loading="lazy" alt="Perfume Eros de Versace para hombre - Aroma intenso y seductor con notas de menta, vainilla y haba tonka." class="product-card__image" width="200" height="200">
+            </picture>
+            <h3 class="product-card__name">Eros de Versace</h3>
+            <p class="product-card__price">$270.000</p>
+            <p class="product-card__description">Eros de Versace es una fragancia masculina con notas frescas de menta, limón y manzana.</p>
+            <button class="product-card__button">Ver más</button>
+          </div>
+
+          <div class="product-card" >
+            <picture>
+              <source srcset="./Img/One_million.avif" type="image/avif">
+              <source srcset="./Img/One_million.webp" type="image/webp">
+              <img src="./Img/One_million.jpg" loading="lazy" alt="Perfume One Million de Paco Rabanne para hombre - Fragancia amaderada y especiada con canela y cuero." class="product-card__image" width="200" height="200">
+            </picture>
+            <h3 class="product-card__name">One Million</h3>
+            <p class="product-card__price">$290.000</p>
+            <p class="product-card__description">One Million de Paco Rabanne es una fragancia masculina con notas frescas de pomelo y menta.</p>
+            <button class="product-card__button">Ver más</button>
+          </div>
+
+          <div class="product-card">
+            <picture>
+              <source srcset="./Img/Acqua_di_Giò.avif" type="image/avif">
+              <source srcset="./Img/Acqua_di_Giò.webp" type="image/webp">
+              <img src="./Img/Acqua_di_Giò.jpg" loading="lazy" alt="Perfume Acqua di Giò de Giorgio Armani - Aroma fresco y acuático con notas cítricas y maderas aromáticas." class="product-card__image" width="200" height="200">
+            </picture>
+            <h3 class="product-card__name">Acqua di Giò</h3>
+            <p class="product-card__price">$220.000</p>
+            <p class="product-card__description">Acqua di Giò de Giorgio Armani es una fragancia fresca y elegante inspirada en el mar.</p>
+            <button class="product-card__button">Ver más</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="carousel-slide">
+        <h2 class="main__products-title">Recomendados para mujer</h2>
+        <section class="main__products-row">
+      
+          <div class="product-card">
+            <img src="./Img/Scandalhombre.jpg" loading="lazy" alt="Scandal de Jean Paul Gaultier - Fragancia intensa y dulce para mujer." class="product-card__image" width="200" height="200">
+            <h3 class="product-card__name">Scandal</h3>
+            <p class="product-card__price">$390.000</p>
+            <p class="product-card__description">Scandal es una fragancia intensa y seductora, combinando notas dulces con toques florales y amaderados.</p>
+            <button class="product-card__button">Ver más</button>
+          </div>
+      
+      
+          <div class="product-card">
+              <img src="./Img/MissDiorm.jpg" loading="lazy" alt="Miss Dior - Fragancia sofisticada y romántica para mujer." class="product-card__image" width="200" height="200">
+            <h3 class="product-card__name">Miss Dior</h3>
+            <p class="product-card__price">$600.000</p>
+            <p class="product-card__description">Miss Dior es una fragancia emblemática que celebra la feminidad con elegancia y pasión.</p>
+            <button class="product-card__button">Ver más</button>
+          </div>
+      
+          <div class="product-card">
+            <img src="./Img/Lavie.webp" loading="lazy" alt="La Vie Est Belle - Fragancia cautivadora y elegante para mujer." class="product-card__image" width="200" height="200">
+            <h3 class="product-card__name">La Vie Est Belle</h3>
+            <p class="product-card__price">$400.000</p>
+            <p class="product-card__description">Una fragancia cautivadora que celebra la belleza y la libertad de ser única.</p>
+            <button class="product-card__button">Ver más</button>
+          </div>
+        
+      
+        </section>
+      </div>
+      
+
+      <div class="carousel-slide">
+        <h2 class="main__products-title">Perfumes Unisex</h2>
+        <section class="main__products-row">
+          <div class="product-card">
+            <picture>
+              <source srcset="./Img/Shannengold.avif" type="image/avif">
+              <source srcset="./Img/Shannengold.webp" type="image/webp">
+              <img src="./Img/Shannengold.jpg" loading="lazy" alt="Perfume unisex Shahen Gold de Lattafa - Fragancia oriental y especiada con notas de ámbar, vainilla y maderas exóticas." class="product-card__image" width="200" height="200">
+            </picture>
+            <h3 class="product-card__name">Shaheen Gold Lattafa</h3>
+            <p class="product-card__price">$280.000</p>
+            <p class="product-card__description">Shaheen Gold de Lattafa Pride es una fragancia majestuosa y sofisticada que representa la grandeza y la fuerza de un halcón dorado.</p>
+            <button class="product-card__button">Ver más</button>
+          </div>
+
+          <div class="product-card">
+            <picture>
+              <source srcset="./Img/Fakhargold.avif" type="image/avif">
+              <source srcset="./Img/Fakhargold.webp" type="image/webp">
+              <img src="./Img/Fakhargold.jpg" loading="lazy" alt="Perfume unisex Fakhar Gold de Lattafa - Aroma lujoso y envolvente con notas afrutadas, florales y toques amaderados" class="product-card__image" width="200" height="200">
+            </picture>
+            <h3 class="product-card__name">Fakhar Lattafa Gold</h3>
+            <p class="product-card__price">$280.000</p>
+            <p class="product-card__description">Fakhar Lattafa Gold es una fragancia opulenta y sofisticada que encarna el lujo y la elegancia en su máxima expresión.</p>
+            <button class="product-card__button">Ver más</button>
+          </div>
+
+        </section>
+      </div>
+
+    </div>
+  </main>
+
+
+  <section class="BlogSection">
+    <div class="BlogSection__content-wrapper">
+      <div class="BlogSection__title-wrapper">
+        <h2 class="BlogSection__title">
+          Más que aromas, creamos 
+          <span class="highlight">experiencias</span>
+        </h2>
+      </div>
+  
+      <div class="BlogSection__cards">
+        <div class="BlogSection__card">
+          <div class="BlogSection__card-image">
+            <picture>
+              <source srcset="./Img/Aromas.avif" type="image/avif">
+              <source srcset="./Img/Aromas.webp" type="image/webp">
+              <img src="./Img/Aromas.jpg" 
+                   loading="lazy" 
+                   alt="El poder de los aromas" 
+                   class="BlogSection__image"
+                   width="320" 
+                   height="240">
+            </picture>
+          </div>
+          <div class="BlogSection__content">
+            <h3 class="BlogSection__card-title">El poder de los aromas</h3>
+            <p class="BlogSection__text">
+              Descubre cómo los aromas pueden influir en tus emociones y estado de ánimo.
+            </p>
+            <a href="./Blog1.html" class="BlogSection__link">Leer más</a>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="BlogSection__card">
+          <div class="BlogSection__card-image">
+            <picture>
+              <source srcset="./Img/Cuidado.avif" type="image/avif">
+              <source srcset="./Img/Cuidado.webp" type="image/webp">
+              <img src="./Img/Cuidado.jpg" 
+                   loading="lazy" 
+                   alt="Cuidado personal" 
+                   class="BlogSection__image"
+                   width="320" 
+                   height="240">
+            </picture>
+          </div>
+          <div class="BlogSection__content">
+            <h3 class="BlogSection__card-title">Cuidado personal</h3>
+            <p class="BlogSection__text">
+              Tips esenciales para mantener tu piel y cuerpo impecables.
+            </p>
+            <a href="./Blog2.html" class="BlogSection__link">Leer más</a>
+          </div>
+        </div>
+  
+        <div class="BlogSection__card">
+          <div class="BlogSection__card-image">
+            <picture>
+              <source srcset="./Img/Duracion.avif" type="image/avif">
+              <source srcset="./Img/Duracion.webp" type="image/webp">
+              <img src="./Img/Duracion.jpg" 
+                   loading="lazy" 
+                   alt="Duración del aroma" 
+                   class="BlogSection__image"
+                   width="320" 
+                   height="240">
+            </picture>
+          </div>
+          <div class="BlogSection__content">
+            <h3 class="BlogSection__card-title">Cómo hacer durar el aroma</h3>
+            <p class="BlogSection__text">
+              Tips para maximizar la duración de tus fragancias favoritas.
+            </p>
+            <a href="./Blog3.html" class="BlogSection__link">Leer más</a>
+          </div>
+        </div>
+  
+        <!-- Card 4 -->
+        <div class="BlogSection__card">
+          <div class="BlogSection__card-image">
+            <picture>
+              <source srcset="./Img/Factoresduracion.avif" type="image/avif">
+              <source srcset="./Img/Factoresduracion.webp" type="image/webp">
+              <img src="./Img/Factoresduracion.jpg" 
+                   loading="lazy" 
+                   alt="Factores que afectan duración del aroma" 
+                   class="BlogSection__image"
+                   width="320" 
+                   height="240">
+            </picture>
+          </div>
+          <div class="BlogSection__content">
+            <h3 class="BlogSection__card-title">Factores que Afectan la Duración de un Perfume</h3>
+            <p class="BlogSection__text">
+              La duración de un perfume puede variar dependiendo de varios factores externos e internos.
+            </p>
+            <a href="./Blog4.html" class="BlogSection__link">Leer más</a>
+          </div>
+        </div>
+  
+        <!-- Card 5 -->
+        <div class="BlogSection__card">
+          <div class="BlogSection__card-image">
+            <picture>
+              <source srcset="./Img/Errores.avif" type="image/avif">
+              <source srcset="./Img/Errores.webp" type="image/webp">
+              <img src="./Img/Errores.jpg" 
+                   loading="lazy" 
+                   alt="Errores Comunes al Aplicar Perfume" 
+                   class="BlogSection__image"
+                   width="320" 
+                   height="240">
+            </picture>
+          </div>
+          <div class="BlogSection__content">
+            <h3 class="BlogSection__card-title">Errores Comunes al Aplicar Perfume</h3>
+            <p class="BlogSection__text">
+              Es importante conocer los errores que pueden afectar el rendimiento de un perfume.
+            </p>
+            <a href="./Blog5.html" class="BlogSection__link">Leer más</a>
+          </div>
+        </div>
+  
+        <!-- Card 6 -->
+        <div class="BlogSection__card">
+          <div class="BlogSection__card-image">
+            <picture>
+              <source srcset="./Img/Reaplicacion.avif" type="image/avif">
+              <source srcset="./Img/Reaplicacion.webp" type="image/webp">
+              <img src="./Img/Reaplicacion.jpg" 
+                   loading="lazy" 
+                   alt="Reaplicación y Refuerzo del Aroma" 
+                   class="BlogSection__image"
+                   width="320" 
+                   height="240">
+            </picture>
+          </div>
+          <div class="BlogSection__content">
+            <h3 class="BlogSection__card-title">Reaplicación y Refuerzo del Aroma</h3>
+            <p class="BlogSection__text">
+              Saber cómo reaplicar un perfume sin saturar el olfato es clave para mantener su presencia durante todo el día.
+            </p>
+            <a href="./Blog6.html" class="BlogSection__link">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>>
+  
+
+  <footer class="Footer">
+    <div class="Footer__container">
+      <div class="Footer__section">
+        <h4 class="Footer__title">Servicio al cliente</h4>
+        <p class="Footer__text">Contacta con nuestro equipo para resolver tus dudas.</p>
+      </div>
+
+      <div class="Footer__section">
+        <h4 class="Footer__title">Acerca de Elegassence</h4>
+        <ul class="Footer__list">
+          <li><a href="#" class="Footer__link">Nuestra historia</a></li>
+          <li><a href="#" class="Footer__link">Aliados comerciales</a></li>
+        </ul>
+      </div>
+
+      <div class="Footer__section">
+        <h4 class="Footer__title">Ayuda</h4>
+        <ul class="Footer__list">
+          <li><a href="#" class="Footer__link">Servicio al cliente</a></li>
+          <li><a href="#" class="Footer__link">Reembolsos y cambios</a></li>
+        </ul>
+      </div>
+
+      <div class="Footer__section">
+        <h4 class="Footer__title">Región y lenguaje</h4>
+        <p class="Footer__text">Colombia - Español</p>
+      </div>
+    </div>
+
+    <div class="Footer__legal">
+      <p class="Footer__legal-text">© 2025 Elegassence Colombia, Todos los derechos reservados.</p>
+      <ul class="Footer__legal-list">
+        <li><a href="#" class="Footer__link">Política de privacidad</a></li>
+        <li><a href="#" class="Footer__link">Términos de uso</a></li>
+        <li><a href="#" class="Footer__link">Accesibilidad</a></li>
+      </ul>
+      <p class="Footer__contact-info">+57 3194316780</p>
+    </div>
+  </footer>
+
+  <script src="./JavaScript/Index.js" defer> </script>
+
+  </body>
+
+  </html>
