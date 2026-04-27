@@ -1,12 +1,11 @@
-# ElegassenceFrontend
+<h1>Elegassence Frontend</h1>
 Este es un proyecto que se centra en un freelance del ecommerce elegassence enfocado en una perfumeria, en este caso es repositorio posee la parte del frontend del proyecto
-![React](https://img.shields.io/badge/HTML-orange)
-![Node.js](https://img.shields.io/badge/CSS-blue)
-![PostgreSQL](https://img.shields.io/badge/JAVASCRIPT-yellow)
+![HTML](https://img.shields.io/badge/HTML-orange)
+![CSS](https://img.shields.io/badge/CSS-blue)
+![JAVASCRIPT](https://img.shields.io/badge/JAVASCRIPT-yellow)
 
 
-
-##Demo
+<h2>Demo</h2>
 <h3>Pagina principal</h3>
 <img width="1905" height="910" alt="image" src="https://github.com/user-attachments/assets/8d4ec9cd-1253-40a0-b6a3-af78d96f4405" />
 <h3>Catalogo</h3>
@@ -21,27 +20,31 @@ Este es un proyecto que se centra en un freelance del ecommerce elegassence enfo
 -Los productos se pueden agregar a un carrito que recolecta informacion de contacto del cliente
 -Se cuenta con acceso a whatsapp directo
 -Los pedidos se generan directamente por whatsapp
-##Tecnologias
--HTML
--CSS
--JAVASCRIPT
-##Arquitectura
+<h2>Tecnologias</h2>
+<div style="display: flex; flex-direction: row">
+<img width="366" height="371" alt="image" src="https://github.com/user-attachments/assets/ca40e8eb-2eb9-41fc-8a62-8a0bf85beec3" />
+<img width="366" height="371" alt="image" src="https://github.com/user-attachments/assets/2ad073c5-83cc-4692-9557-7189908b265c" />
+<img width="211" height="239" alt="image" src="https://github.com/user-attachments/assets/6e93c88e-2357-43fa-8199-d5905467440c" />
+
+</div>
+
+<h2>Arquitectura</h2>
 -La logica del frontend esta definida por modulos lo que yo como ing de software asimilo a un monolito modular
 ##Instalacion
 -El ecommerce esta completamente disponible desde internet, no requiere ninguna instalacion
-##Uso
+<h2>Uso</h2>
 -(Por definir)
-##Roadmap
+<h2>Roadmap</h2>
 -Se quiere implementar un catalogo dinamico con backend funcional y bases de dato desplegada en algun hosting o vps
 -Se quiere implementar una pasarela de pagos
 -Se quiere implmentar un servicio de mensajeria para confirmar pedidos
 -Se quiere implementar un modulo para que el cliente pueda dar seguimiento a sus pedidos
 -Se quiere implementar registro de clientes por medio de google
-##Aprendizaje
+<h2>Aprendizaje</h2>
 -En esta primera version puse en practica conocimientos en front end,logica y el lenguaje javascript
 -Se trato implementar una metodologia scrum para el flujo de trabajo por lo que se amplio el conocimiento en este mundo
 -Se aprendio a presupuestar proyectos de software
 -En esta primera version se esta aprendiendo a usar git y github, tratando de aplicar gitflow
-##Autores
+<h2>Autores</h2>
 David mauricio herazo lopez y Julian Joel Jimenez Cardenas
 
