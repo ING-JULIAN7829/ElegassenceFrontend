@@ -18,6 +18,11 @@ git push origin develop
 
 
 ##GIT FLOW COMANDOS
+
+##Usar este comando para que se genere un commit de mergeo 
+git merge --no-ff nombre-rama
+
+
 ##FEEATURE################## -Funcionalidades
 git checkout develop                              # Ir a la rama base de desarrollo
 git pull origin develop                           # Actualizar develop con los últimos cambios

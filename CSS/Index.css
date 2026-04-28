@@ -3,7 +3,7 @@
   --bg-secondary: #EDEDED;
   --text-secondary: #737373;
   --bg-main: #FAFAFA;
-  --accent: #A67C52;
+  --accent: #a67c52;
   --button-text: #FFFFFF; 
   --button-bg: #D17B39; 
   --button-bg-hover: #B6672A;
@@ -1341,7 +1341,7 @@ h1, h2, h3 {
 
 /* Catologo */
 
-.Catalogo__search-wrapper {
+/* .Catalogo__search-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1356,7 +1356,7 @@ h1, h2, h3 {
   margin-right: auto;
   z-index: 1000000;
 }
-
+ */
 
 
 

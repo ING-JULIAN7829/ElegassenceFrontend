@@ -113,28 +113,27 @@
               display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-bottom: 3rem;
-                gap: 1rem;
-                padding: 1rem;
-                background-color: #ffffff;
-                border-radius: 8px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-                max-width: 900px;
-                margin-left: auto;
-                margin-right: auto;
+                margin: 3rem 0rem auto auto;
+            
+                min-width: 45rem;
     }
     .Catalogo__search-bar{
                 padding: 0.8rem 1.2rem;
                 font-size: 1.6rem;
                 width: 100%;
-                max-width: 400px;
-                border: 2px solid var(--text-secondary);
-                border-radius: 8px;
+                max-width: 50rem;
+                /* border: 2px solid var(--text-secondary); */
+                padding: 1.2rem 1.6rem;
+                border: none;
+                border-radius: 12px;
                 outline: none;
                 transition: border-color 0.3s ease;
-
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
                 &:focus{
-                      border-color: var(--accent);
+                      /* border: 2px solid var(--accent); */
+                       outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 4px rgb(166, 124, 82 , 0.25);
                 }
     }
     .Catalogo__search-button { /*Alparecer no funciona*/
