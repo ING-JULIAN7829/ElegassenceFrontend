@@ -1,0 +1,226 @@
+/*Empezamos con el catalogo*/
+
+/*Main*/
+.Catalogo {
+  padding: 6rem 2rem;
+  background-color: var(--bg-secondary);
+  min-height: 100vh;
+ /*FIltros de precio*/
+     .Catalogo__filter-price{
+        width: 100%;
+        margin: 10px 0;
+        accent-color: var(--accent);
+    }
+  /*Contenido*/
+   .Catalogo__content {
+      display: flex;
+      gap: 2rem;
+      padding: 2rem;
+      
+
+    } 
+    /*Filtros*/
+    .Catalogo__filters{
+       background: #f8f8f8;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-family: 'Poppins', sans-serif;
+      /*Titulos de los filtros*/
+      .Catalogo__filter-heading{
+            font-size: 1.8rem;
+          font-weight: 600;
+          margin-bottom: 12px;
+          color: #333;
+      }
+      /*Listado de filtros*/
+      .Catalogo__filter-list{
+          list-style: none;
+        padding: 0;
+        margin: 0;
+
+        & li {
+            margin-bottom: 10px;
+            /*Personalizacion de labels*/
+             label{
+                   font-size: 1.6rem;
+                 cursor: pointer;
+                 display: flex;
+                 align-items: center;
+                 gap: 12px;
+                 background: #fff;
+                 padding: 10px;
+                 border-radius: 8px;
+                 transition: background 0.3s ease, box-shadow 0.3s ease;
+                 border: 1px solid #ddd;
+             }
+        }
+        /*Da la apariencia de los ratios y checbox*/
+         & input {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #aaa;
+        
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            /*Aplicamos solo a los ratios*/
+            &[type="radio"]{
+              
+                border-radius: 50%;
+                
+            }
+
+            /*A los checkbox les generamos un chulito dentro*/
+            &[type="checkbox"]:checked::before{
+                 content: "✔";
+                    font-size: 14px;
+                    color: white;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+            }
+
+            /*Cuando seleccionamos cualquier input*/
+            &:checked {
+                background-color: var(--accent);
+            }
+        } 
+      }
+
+
+
+
+    }
+    /*Barra de precio*/
+    #Catalogo__filter-price{
+        width: 100%;
+        margin: 10px 0;
+        accent-color: var(--accent, #4a90e2);
+    }
+    #Catalogo__price-value{
+         font-size: 1.4rem;
+        color: #555;
+        text-align: center;
+    }
+    
+    
+    /*Barra de busqueda*/
+
+    .Catalogo__search-wrapper{
+              display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 3rem;
+                gap: 1rem;
+                padding: 1rem;
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                max-width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+    }
+    .Catalogo__search-bar{
+                padding: 0.8rem 1.2rem;
+                font-size: 1.6rem;
+                width: 100%;
+                max-width: 400px;
+                border: 2px solid var(--text-secondary);
+                border-radius: 8px;
+                outline: none;
+                transition: border-color 0.3s ease;
+
+                &:focus{
+                      border-color: var(--accent);
+                }
+    }
+    .Catalogo__search-button { /*Alparecer no funciona*/
+        padding: 0.8rem 1.6rem;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: var(--button-text);
+        background-color: var(--button-bg);
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        &:hover {
+             background-color: var(--button-bg-hover);
+             transform: translateY(-4px);
+        }
+    }
+
+    /*Titulo del catalogo*/
+    .Catalogo__title {
+        text-align: center;
+        font-size: 3rem;
+        color: var(--accent);
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+    }
+    /*Grid del catalogo - distribucion*/
+    .Catalogo__grid {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr)); 
+        gap: 2rem;
+        padding: 1rem;
+        justify-content: center; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+    }
+    
+
+    /*Responsive del catalogo*/
+    /*Telefono*/
+    @media (max-width: 768px) {
+        .Product-card__image {
+
+            height: 30%;
+
+        }
+
+        .Catalogo__search-wrapper {
+            flex-direction: column;
+            padding: 1rem;
+            gap: 0.5rem;
+        }
+
+        .Catalogo__search-bar {
+            max-width: 100%;
+        }
+
+        .Catalogo__search-button {
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+    /*Tablet*/
+    @media (max-width: 992px) { 
+        padding: 16rem 2rem;
+
+        .Catalogo__content {
+            flex-direction: column;
+        }
+
+        .Catalogo__filters{
+            width: 100%;
+        }
+        .Catalogo__grid {
+            grid-template-columns: 1fr;
+        }
+
+        .Product-card__image {
+
+            height: 50rem;
+
+        }
+    }
+
+    /*Escritorio*/
+}
