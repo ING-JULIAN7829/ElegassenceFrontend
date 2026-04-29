@@ -2,7 +2,8 @@
 
 /*Main*/
 .Catalogo {
-  padding: 6rem 2rem;
+    padding: 16rem 2rem;
+  
   background-color: var(--bg-secondary);
   min-height: 100vh;
  /*FIltros de precio*/
@@ -13,19 +14,22 @@
     }
   /*Contenido*/
    .Catalogo__content {
-      display: flex;
-      gap: 2rem;
-      padding: 2rem;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
       
 
     } 
     /*Filtros*/
     .Catalogo__filters{
+        display: block;
        background: #f8f8f8;
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       font-family: 'Poppins', sans-serif;
+      height: fit-content;
+      margin-bottom: 3rem;
       /*Titulos de los filtros*/
       .Catalogo__filter-heading{
             font-size: 1.8rem;
@@ -43,7 +47,7 @@
             margin-bottom: 10px;
             /*Personalizacion de labels*/
              label{
-                   font-size: 1.6rem;
+                font-size: 1.6rem;
                  cursor: pointer;
                  display: flex;
                  align-items: center;
@@ -115,7 +119,7 @@
                 align-items: center;
                 margin: 3rem 0rem auto auto;
             
-                min-width: 45rem;
+                min-width: 30rem;
     }
     .Catalogo__search-bar{
                 padding: 0.8rem 1.2rem;
@@ -153,10 +157,10 @@
     }
 
     /*Titulo del catalogo*/
-    .Catalogo__title {
+    .Catalogo__filters-title {
         text-align: center;
-        font-size: 3rem;
-        color: var(--accent);
+        font-size: 1.3rem;
+  
         margin-bottom: 2rem;
         text-transform: uppercase;
         letter-spacing: 0.1rem;
@@ -165,7 +169,7 @@
     .Catalogo__grid {
         flex: 1;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr)); 
+        grid-template-columns: 1fr;
         gap: 2rem;
         padding: 1rem;
         justify-content: center; 
@@ -175,12 +179,23 @@
     
 
     /*Responsive del catalogo*/
-    /*Telefono*/
-    @media (max-width: 768px) {
+    /*Tablet*/
+    @media (min-width: 768px) {
+        .Catalogo__content {
+            display: flex;
+            flex-direction: row;
+        }
+         .Catalogo__grid {
+              grid-template-columns: repeat(2 , 1fr);
+        }
+
         .Product-card__image {
 
-            height: 30%;
+            height: 50%;
 
+        }
+        .Catalogo__filters{
+            margin-bottom: 0rem;
         }
 
         .Catalogo__search-wrapper {
@@ -189,9 +204,9 @@
             gap: 0.5rem;
         }
 
-        .Catalogo__search-bar {
+        /* .Catalogo__search-bar {
             max-width: 100%;
-        }
+        } */
 
         .Catalogo__search-button {
             width: 100%;
@@ -199,26 +214,24 @@
         }
 
     }
-    /*Tablet*/
-    @media (max-width: 992px) { 
-        padding: 16rem 2rem;
+    /*Escritorio*/
+    @media (min-width: 992px) { 
+        padding: 6rem 2rem;
 
-        .Catalogo__content {
-            flex-direction: column;
-        }
-
+     
+/* 
         .Catalogo__filters{
             width: 100%;
-        }
+        } */
         .Catalogo__grid {
-            grid-template-columns: 1fr;
+              grid-template-columns: repeat(4 , 1fr);
         }
-
+/* 
         .Product-card__image {
 
             height: 50rem;
 
-        }
+        } */
     }
 
     /*Escritorio*/
