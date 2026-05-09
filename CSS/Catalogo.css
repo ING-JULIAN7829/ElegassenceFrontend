@@ -14,10 +14,11 @@
     }
   /*Contenido*/
    .Catalogo__content {
+        display: flex;
         flex-direction: column;
         gap: 2rem;
         padding: 2rem;
-      
+     
 
     } 
     /*Filtros*/
@@ -183,19 +184,16 @@
     @media (min-width: 768px) {
         .Catalogo__content {
             display: flex;
-            flex-direction: row;
+            flex-direction: row; 
         }
          .Catalogo__grid {
               grid-template-columns: repeat(2 , 1fr);
         }
 
-        .Product-card__image {
-
-            height: 50%;
-
-        }
+  
         .Catalogo__filters{
             margin-bottom: 0rem;
+            
         }
 
         .Catalogo__search-wrapper {
@@ -226,12 +224,7 @@
         .Catalogo__grid {
               grid-template-columns: repeat(4 , 1fr);
         }
-/* 
-        .Product-card__image {
 
-            height: 50rem;
-
-        } */
     }
 
     /*Escritorio*/

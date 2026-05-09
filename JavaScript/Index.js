@@ -7,7 +7,7 @@
     let indice = 0;
     function rotar() {
       tarjetas.forEach((tarjeta, i) => {
-        tarjeta.style.display = i === indice ? 'block' : 'none';
+        tarjeta.style.display = i === indice ? 'flex' : 'none';
       });
       indice = (indice + 1) % tarjetas.length;
     }
