@@ -16,6 +16,9 @@ git commit -m "feat: initial frontend structure" -> agregamos un commit de nuest
 #Subimos cambios a github
 git push origin develop
 
+# 1. Crear y cambiar a la nueva rama (Recomendado)
+git checkout -b feature/nueva-funcionalidad
+
 
 ##GIT FLOW COMANDOS
 
