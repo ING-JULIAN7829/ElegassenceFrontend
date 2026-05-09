@@ -322,23 +322,28 @@ h1, h2, h3 {
   overflow-x: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  padding-bottom: 1rem;
+ 
 }
 
 .Hero__card {
   flex: 0 0 auto;
   width: 34rem;
+  padding: 3rem;
+  cursor: pointer;
   min-height: 40rem;
   border-radius: 1.5rem;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
   background-color: var(--bg-secondary);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:first-child {
+    padding: 0;
+  }
 }
 
 .Hero__card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  
 }
 
 .Hero__video {
@@ -1346,24 +1351,6 @@ h1, h2, h3 {
 
 
 
-/* Catologo */
-
-/* .Catalogo__search-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3rem;
-  gap: 1rem;
-  padding: 1rem; 
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 90rem;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1000000;
-}
- */
 
 
 
@@ -1372,19 +1359,8 @@ h1, h2, h3 {
 
 
 
-/* Personalización de los labels
-.Catalogo__filter-list label {
-  font-size: 1.6rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background: #fff;
-  padding: 10px;
-  border-radius: 8px;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #ddd;
-} */
+
+
 
 /* Hover y selección */
 .Catalogo__filter-list label:hover { /*Alparecer no funciona*/
