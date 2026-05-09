@@ -16,7 +16,7 @@
    .Catalogo__content {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
         padding: 2rem;
      
 
@@ -172,7 +172,7 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
-        padding: 1rem;
+        /* padding: 1rem; */
         justify-content: center; 
         max-width: 1200px; 
         margin: 0 auto; 
