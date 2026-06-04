@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de lujo Elegassence - Encuentra moda y accesorios exclusivos.">
+    <meta name="keywords" content="lujo, moda, accesorios, Elegassence, tienda online">
+    <meta name="author" content="Elegassence">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Elegassence - Tienda de Lujo">
+    <meta property="og:description" content="Explora nuestra colección de lujo y estilo.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/catalogo">
+    <meta property="og:image" content="/Img/Logo.jpg">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&family=Urbanist:wght@400;600&family=DM+Sans:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&family=Urbanist:wght@400;600&family=DM+Sans:wght@400;700&display=swap">
+    </noscript>
+    <link rel="icon" href="./Img/Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/Normalize.css">
+    <link rel="stylesheet" href="./CSS/Globales.css">    
+    <link rel="stylesheet" href="./CSS/Header.css">    
+    <link rel="stylesheet" href="./CSS/Footer.css">    
+    <link rel="stylesheet" href="./CSS/index.css">    
+    <link rel="stylesheet" href="./CSS/Catalogo.css">  
+    <link rel="stylesheet" href="./CSS/Productos.css">  
+    <title>Elegassence - Catalogo</title>
+  </head>
+  
+  
+</head>
+<body>
+    <header class="Header">
+        <div class="Header__branding">
+          <a href="/" class="Header__logo">Elegassence</a>
+        </div>
+      
+        <nav class="Header__nav">
+          <ul class="Header__menu">
+            <li class="Header__menu-item">
+              <a href="./Index.html" class="Header__menu-link">Inicio</a>
+            </li>
+            <li class="Header__menu-item">
+              <a href="./Catalogo.html" class="Header__menu-link">Catálogo</a>
+            </li>
+            <li class="Header__menu-item">
+              <a href="./Blog.html" class="Header__menu-link">Blog</a>
+            </li>
+          </ul>
+        </nav>
+      
+        <div class="Header__shipping">
+          <picture>
+            <source srcset="/Img/Bandera.webp" type="image/webp">
+            <source srcset="/Img/Bandera.avif" type="image/avif">
+            <img src="/Img/Bandera.png" alt="Bandera nacional">
+          </picture>
+          Envíos nacionales
+        </div>
+      
+        <div class="Header__icons">
+            <img src="./Img/Carrito.png" alt="Carrito de Compras" > 
+        </div>
+      </header>
+
+
+      <main class="Catalogo">
+        <div class="Catalogo__search-wrapper">
+          <input type="text" id="Catalogo__search-bar" class="Catalogo__search-bar" placeholder="Buscar productos...">
+        </div>
+    
+        <div class="Catalogo__content">
+          <aside class="Catalogo__filters">
+            <h3 class="Catalogo__filters-title">Filtrar por</h3>
+        
+            <div class="Catalogo__filter-category">
+                <h4 class="Catalogo__filter-heading">Categoría</h4>
+                <ul class="Catalogo__filter-list">
+                    <li><label><input type="radio" name="category" value="fragancias-femeninas"> Fragancias Femeninas</label></li>
+                    <li><label><input type="radio" name="category" value="fragancias-masculinas"> Fragancias Masculinas</label></li>
+                    <li><label><input type="radio" name="category" value="fragancias-unisex"> Fragancias Unisex</label></li>
+                    <li><label><input type="radio" name="category" value="all" checked> Todos los perfumes</label></li>
+                    <li><label><input type="radio" name="category" value="destacados"> Destacados</label></li>
+                    <li><label><input type="radio" name="category" value="mas-vendidos"> Más vendidos</label></li>
+                </ul>
+            </div>
+        
+            <div class="Catalogo__filter-category">
+              <h4 class="Catalogo__filter-heading">Precio</h4>
+              <input type="range" min="160000" max="600000" step="10000" id="Catalogo__filter-price">
+              <p id="Catalogo__price-value">Hasta $600.000</p>
+            </div>
+            
+        
+            <div class="Catalogo__filter-category">
+                <h4 class="Catalogo__filter-heading">Aroma</h4>
+                <ul class="Catalogo__filter-list">
+                    <li><label><input type="checkbox" name="aroma" value="floral"> Floral</label></li>
+                    <li><label><input type="checkbox" name="aroma" value="amaderado"> Amaderado</label></li>
+                    <li><label><input type="checkbox" name="aroma" value="fresco"> Fresco</label></li>
+                    <li><label><input type="checkbox" name="aroma" value="dulce"> Dulce</label></li>
+                    <li><label><input type="checkbox" name="aroma" value="especiado"> Especiado</label></li>
+                </ul>
+            </div>
+        </aside>
+        
+    
+            <main class="Catalogo__grid" id="Catalogo__grid">
+
+             
+              <div class="Product-card" data-category="fragancias-masculinas" data-aroma="dulce" data-price="270000" data-name="Eros de Versace">
+                  <img src="./Img/Eros_de_versacce.png" alt="Eros" class="Product-card__image" width="10px" height="50px">
+                  <h3 class="Product-card__name">Eros de Versace</h3>
+                  <p class="Product-card__price">$270.000</p>
+                  <!-- <p class="Product-card__description">Eros de Versace es la encarnación de la pasión, la seducción y la fuerza. Inspirado en el dios griego del amor, este perfume es un tributo a los hombres que dominan su destino con seguridad y carisma. Con una combinación de frescura intensa, dulzura profunda y maderas cálidas, Eros es una fragancia que despierta los sentidos y captura la atención.</p> -->
+<!--                   
+                  <div class="Product-card__details">
+                      <p><strong>Notas de salida:</strong> Menta, manzana verde, limón.</p>
+                      <p><strong>Notas de corazón:</strong> Haba tonka, geranio, ambroxan.</p>
+                      <p><strong>Notas de fondo:</strong> Vainilla, cedro, vetiver.</p>
+                      <p><strong>Duración:</strong> 6 a 8 horas.</p>
+                  </div> -->
+
+                  <button class="Product-card__button">Agregar al Carrito</button>
+
+      
+              </div>
+
+             
+              <div class="Product-card" data-category="fragancias-masculinas" data-aroma="dulce" data-price="270000" data-name="Eros de Versace">
+                  <img src="./Img/Eros_de_versacce.png" alt="Eros" class="Product-card__image" width="10px" height="50px">
+                  <h3 class="Product-card__name">Eros de Versace</h3>
+                  <p class="Product-card__price">$270.000</p>
+                  <!-- <p class="Product-card__description">Eros de Versace es la encarnación de la pasión, la seducción y la fuerza. Inspirado en el dios griego del amor, este perfume es un tributo a los hombres que dominan su destino con seguridad y carisma. Con una combinación de frescura intensa, dulzura profunda y maderas cálidas, Eros es una fragancia que despierta los sentidos y captura la atención.</p> -->
+<!--                   
+                  <div class="Product-card__details">
+                      <p><strong>Notas de salida:</strong> Menta, manzana verde, limón.</p>
+                      <p><strong>Notas de corazón:</strong> Haba tonka, geranio, ambroxan.</p>
+                      <p><strong>Notas de fondo:</strong> Vainilla, cedro, vetiver.</p>
+                      <p><strong>Duración:</strong> 6 a 8 horas.</p>
+                  </div> -->
+
+                  <button class="Product-card__button">Agregar al Carrito</button>
+
+      
+              </div>
+                 
+              <div class="Product-card" data-category="fragancias-masculinas" data-aroma="dulce" data-price="270000" data-name="Eros de Versace">
+                  <img src="./Img/Eros_de_versacce.png" alt="Eros" class="Product-card__image" width="10px" height="50px">
+                  <h3 class="Product-card__name">Eros de Versace</h3>
+                  <p class="Product-card__price">$270.000</p>
+                  <!-- <p class="Product-card__description">Eros de Versace es la encarnación de la pasión, la seducción y la fuerza. Inspirado en el dios griego del amor, este perfume es un tributo a los hombres que dominan su destino con seguridad y carisma. Con una combinación de frescura intensa, dulzura profunda y maderas cálidas, Eros es una fragancia que despierta los sentidos y captura la atención.</p> -->
+<!--                   
+                  <div class="Product-card__details">
+                      <p><strong>Notas de salida:</strong> Menta, manzana verde, limón.</p>
+                      <p><strong>Notas de corazón:</strong> Haba tonka, geranio, ambroxan.</p>
+                      <p><strong>Notas de fondo:</strong> Vainilla, cedro, vetiver.</p>
+                      <p><strong>Duración:</strong> 6 a 8 horas.</p>
+                  </div> -->
+
+                  <button class="Product-card__button">Agregar al Carrito</button>
+
+      
+              </div>
+                 
+              <div class="Product-card" data-category="fragancias-masculinas" data-aroma="dulce" data-price="270000" data-name="Eros de Versace">
+                  <img src="./Img/Eros_de_versacce.png" alt="Eros" class="Product-card__image" width="10px" height="50px">
+                  <h3 class="Product-card__name">Eros de Versace</h3>
+                  <p class="Product-card__price">$270.000</p>
+                  <!-- <p class="Product-card__description">Eros de Versace es la encarnación de la pasión, la seducción y la fuerza. Inspirado en el dios griego del amor, este perfume es un tributo a los hombres que dominan su destino con seguridad y carisma. Con una combinación de frescura intensa, dulzura profunda y maderas cálidas, Eros es una fragancia que despierta los sentidos y captura la atención.</p> -->
+<!--                   
+                  <div class="Product-card__details">
+                      <p><strong>Notas de salida:</strong> Menta, manzana verde, limón.</p>
+                      <p><strong>Notas de corazón:</strong> Haba tonka, geranio, ambroxan.</p>
+                      <p><strong>Notas de fondo:</strong> Vainilla, cedro, vetiver.</p>
+                      <p><strong>Duración:</strong> 6 a 8 horas.</p>
+                  </div> -->
+
+                  <button class="Product-card__button">Agregar al Carrito</button>
+
+      
+              </div>
+                 
+              <div class="Product-card" data-category="fragancias-masculinas" data-aroma="dulce" data-price="270000" data-name="Eros de Versace">
+                  <img src="./Img/Eros_de_versacce.png" alt="Eros" class="Product-card__image" width="10px" height="50px">
+                  <h3 class="Product-card__name">Eros de Versace</h3>
+                  <p class="Product-card__price">$270.000</p>
+                  <!-- <p class="Product-card__description">Eros de Versace es la encarnación de la pasión, la seducción y la fuerza. Inspirado en el dios griego del amor, este perfume es un tributo a los hombres que dominan su destino con seguridad y carisma. Con una combinación de frescura intensa, dulzura profunda y maderas cálidas, Eros es una fragancia que despierta los sentidos y captura la atención.</p> -->
+<!--                   
+                  <div class="Product-card__details">
+                      <p><strong>Notas de salida:</strong> Menta, manzana verde, limón.</p>
+                      <p><strong>Notas de corazón:</strong> Haba tonka, geranio, ambroxan.</p>
+                      <p><strong>Notas de fondo:</strong> Vainilla, cedro, vetiver.</p>
+                      <p><strong>Duración:</strong> 6 a 8 horas.</p>
+                  </div> -->
+
+                  <button class="Product-card__button">Agregar al Carrito</button>
+
+      
+              </div>
+              
+                 
+              <div class="Product-card" data-category="fragancias-masculinas" data-aroma="dulce" data-price="270000" data-name="Eros de Versace">
+                  <img src="./Img/Eros_de_versacce.png" alt="Eros" class="Product-card__image" width="10px" height="50px">
+                  <h3 class="Product-card__name">Eros de Versace</h3>
+                  <p class="Product-card__price">$270.000</p>
+                  <!-- <p class="Product-card__description">Eros de Versace es la encarnación de la pasión, la seducción y la fuerza. Inspirado en el dios griego del amor, este perfume es un tributo a los hombres que dominan su destino con seguridad y carisma. Con una combinación de frescura intensa, dulzura profunda y maderas cálidas, Eros es una fragancia que despierta los sentidos y captura la atención.</p> -->
+<!--                   
+                  <div class="Product-card__details">
+                      <p><strong>Notas de salida:</strong> Menta, manzana verde, limón.</p>
+                      <p><strong>Notas de corazón:</strong> Haba tonka, geranio, ambroxan.</p>
+                      <p><strong>Notas de fondo:</strong> Vainilla, cedro, vetiver.</p>
+                      <p><strong>Duración:</strong> 6 a 8 horas.</p>
+                  </div> -->
+
+                  <button class="Product-card__button">Agregar al Carrito</button>
+
+      
+              </div>
+              
+                 
+              <div class="Product-card" data-category="fragancias-masculinas" data-aroma="dulce" data-price="270000" data-name="Eros de Versace">
+                  <img src="./Img/Eros_de_versacce.png" alt="Eros" class="Product-card__image" width="10px" height="50px">
+                  <h3 class="Product-card__name">Eros de Versace</h3>
+                  <p class="Product-card__price">$270.000</p>
+                  <!-- <p class="Product-card__description">Eros de Versace es la encarnación de la pasión, la seducción y la fuerza. Inspirado en el dios griego del amor, este perfume es un tributo a los hombres que dominan su destino con seguridad y carisma. Con una combinación de frescura intensa, dulzura profunda y maderas cálidas, Eros es una fragancia que despierta los sentidos y captura la atención.</p> -->
+<!--                   
+                  <div class="Product-card__details">
+                      <p><strong>Notas de salida:</strong> Menta, manzana verde, limón.</p>
+                      <p><strong>Notas de corazón:</strong> Haba tonka, geranio, ambroxan.</p>
+                      <p><strong>Notas de fondo:</strong> Vainilla, cedro, vetiver.</p>
+                      <p><strong>Duración:</strong> 6 a 8 horas.</p>
+                  </div> -->
+
+                  <button class="Product-card__button">Agregar al Carrito</button>
+
+      
+              </div>
+              
+                 
+              <div class="Product-card" data-category="fragancias-masculinas" data-aroma="dulce" data-price="270000" data-name="Eros de Versace">
+                  <img src="./Img/Eros_de_versacce.png" alt="Eros" class="Product-card__image" width="10px" height="50px">
+                  <h3 class="Product-card__name">Eros de Versace</h3>
+                  <p class="Product-card__price">$270.000</p>
+                  <!-- <p class="Product-card__description">Eros de Versace es la encarnación de la pasión, la seducción y la fuerza. Inspirado en el dios griego del amor, este perfume es un tributo a los hombres que dominan su destino con seguridad y carisma. Con una combinación de frescura intensa, dulzura profunda y maderas cálidas, Eros es una fragancia que despierta los sentidos y captura la atención.</p> -->
+<!--                   
+                  <div class="Product-card__details">
+                      <p><strong>Notas de salida:</strong> Menta, manzana verde, limón.</p>
+                      <p><strong>Notas de corazón:</strong> Haba tonka, geranio, ambroxan.</p>
+                      <p><strong>Notas de fondo:</strong> Vainilla, cedro, vetiver.</p>
+                      <p><strong>Duración:</strong> 6 a 8 horas.</p>
+                  </div> -->
+
+                  <button class="Product-card__button">Agregar al Carrito</button>
+
+      
+              </div>
+              
+                 
+              <div class="Product-card" data-category="fragancias-masculinas" data-aroma="dulce" data-price="270000" data-name="Eros de Versace">
+                  <img src="./Img/Eros_de_versacce.png" alt="Eros" class="Product-card__image" width="10px" height="50px">
+                  <h3 class="Product-card__name">Eros de Versace</h3>
+                  <p class="Product-card__price">$270.000</p>
+                  <!-- <p class="Product-card__description">Eros de Versace es la encarnación de la pasión, la seducción y la fuerza. Inspirado en el dios griego del amor, este perfume es un tributo a los hombres que dominan su destino con seguridad y carisma. Con una combinación de frescura intensa, dulzura profunda y maderas cálidas, Eros es una fragancia que despierta los sentidos y captura la atención.</p> -->
+<!--                   
+                  <div class="Product-card__details">
+                      <p><strong>Notas de salida:</strong> Menta, manzana verde, limón.</p>
+                      <p><strong>Notas de corazón:</strong> Haba tonka, geranio, ambroxan.</p>
+                      <p><strong>Notas de fondo:</strong> Vainilla, cedro, vetiver.</p>
+                      <p><strong>Duración:</strong> 6 a 8 horas.</p>
+                  </div> -->
+
+                  <button class="Product-card__button">Agregar al Carrito</button>
+
+      
+              </div>
+              
+          </main>
+
+
+          </div>
+        </div>
+      </main>
+    
+      
+      
+
+  <footer class="Footer">
+    <div class="Footer__container">
+      <div class="Footer__section">
+        <h4 class="Footer__title">Servicio al cliente</h4>
+        <p class="Footer__text">Contacta con nuestro equipo para resolver tus dudas.</p>
+      </div>
+  
+      <div class="Footer__section">
+        <h4 class="Footer__title">Acerca de Elegassence</h4>
+        <ul class="Footer__list">
+          <li><a href="#" class="Footer__link">Nuestra historia</a></li>
+          <li><a href="#" class="Footer__link">Aliados comerciales</a></li>
+        </ul>
+      </div>
+  
+      <div class="Footer__section">
+        <h4 class="Footer__title">Ayuda</h4>
+        <ul class="Footer__list">
+          <li><a href="#" class="Footer__link">Servicio al cliente</a></li>
+          <li><a href="#" class="Footer__link">Reembolsos y cambios</a></li>
+        </ul>
+      </div>
+  
+      <div class="Footer__section">
+        <h4 class="Footer__title">Región y lenguaje</h4>
+        <p class="Footer__text">Colombia - Español</p>
+      </div>
+    </div>
+  
+    <div class="Footer__legal">
+      <p class="Footer__legal-text">© 2025 Elegassence Colombia, Todos los derechos reservados.</p>
+      <ul class="Footer__legal-list">
+        <li><a href="#" class="Footer__link">Política de privacidad</a></li>
+        <li><a href="#" class="Footer__link">Términos de uso</a></li>
+        <li><a href="#" class="Footer__link">Accesibilidad</a></li>
+      </ul>
+      <p class="Footer__contact-info">+57 3194316780</p>
+    </div>
+  </footer>
+
+
+  <script src="./JavaScript/Catalogo.js" type="module"  > </script>
+ <!--  <script src="./JavaScript/Carrito/Eventos.js" type="module"></script>
+  <script src="./JavaScript/Carrito/Funciones.js" type="module"  ></script>
+   -->
+</body>
+</html>

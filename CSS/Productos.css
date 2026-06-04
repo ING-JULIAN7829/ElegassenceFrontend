@@ -1,0 +1,74 @@
+/*Diseño de los cards*/
+.Product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bg-main);
+  border-radius: 1rem;
+
+  padding: 3rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  min-width: 25rem;
+  width: 100%;
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+}
+.Product-card__image {
+  width: 100%;
+  height: 70%;
+  
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+
+  &:hover{
+    transform: scale(1.05);
+  }
+
+  @media (min-width: 768px) {
+        height: 100%;
+     
+  }
+}
+
+
+.Product-card__name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+.Product-card__price {
+  font-size: 1.8rem;
+  color: var(--highlight-price);
+  font-weight: bold;
+  margin-bottom: 2rem;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+}
+.Product-card__button {
+  padding: 0.8rem 1.6rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--button-text);
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    &:hover{
+         background-color: var(--button-bg-hover);
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+}
