@@ -1,0 +1,153 @@
+/* Footer */
+
+
+.Footer {
+  background-color: var(--accent);
+  color: var(--button-text);
+  padding: 4rem 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.Footer__section {
+  flex: 1 1 calc(25% - 2rem);
+  min-width: 250px;
+  text-align: center;
+}
+
+.Footer__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--button-text);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.Footer__text {
+  font-size: 1.6rem;
+  color: var(--bg-main);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.Footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.Footer__link {
+  font-size: 1.6rem;
+  color: var(--button-text);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+.Footer__link:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.Footer__legal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.Footer__legal-text {
+  font-size: 1.4rem;
+  color: var(--button-text);
+}
+
+.Footer__legal-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Footer__contact-info {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--button-text);
+}
+
+/* Responsive Footer */
+
+@media screen and (max-width: 1024px) {
+  .Footer__container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .Footer__section {
+    flex: 1 1 100%;
+  }
+
+  .Footer__legal {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .Footer__legal-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Footer {
+    padding: 3rem 1.5rem;
+  }
+
+  .Footer__section {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .Footer__legal-text {
+    font-size: 1.4rem;
+  }
+
+  .Footer__contact-info {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Footer {
+    padding: 2rem 1rem;
+  }
+
+  .Footer__title {
+    font-size: 1.8rem;
+  }
+
+  .Footer__text,
+  .Footer__link {
+    font-size: 1.4rem;
+  }
+
+  .Footer__contact-info {
+    font-size: 1.4rem;
+  }
+}
